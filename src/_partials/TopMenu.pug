@@ -1,0 +1,7 @@
+mixin TopMenu(menuItems)
+  nav.header-menu
+    ul.header-menu__list
+      if menuItems
+        each menuItem in menuItems
+          li.header-menu__item
+            a(class='header-menu__link' href=menuItem.href)=menuItem.name

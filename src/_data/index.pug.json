@@ -1,0 +1,96 @@
+{
+  "TopMenuArray": [
+    {
+      "href": "#",
+      "name": "О центре"
+    },
+    {
+      "href": "#",
+      "name": "Услуги"
+    },
+    {
+      "href": "#",
+      "name": "Конкурсная документация"
+    },
+    {
+      "href": "#",
+      "name": "Запрос коммерческих предложений"
+    },
+    {
+      "href": "#",
+      "name": "Мероприятия"
+    },
+    {
+      "href": "#",
+      "name": "Новости"
+    },
+    {
+      "href": "#",
+      "name": "Контакты"
+    }
+  ],
+  "AdvantagesArray": [
+    {
+      "image": "./images/advantages/adv-1.png",
+      "hover": "./images/advantages/adv-1-hover.png",
+      "text": "Доступность востребованных инжиниринговых услуг для производственных СМСП"
+    },
+    {
+      "image": "./images/advantages/adv-2.png",
+      "hover": "./images/advantages/adv-2-hover.png",
+      "text": "Рост количества высоко-производительных рабочих мест Тульского региона"
+    },
+    {
+      "image": "./images/advantages/adv-3.png",
+      "hover": "./images/advantages/adv-3-hover.png",
+      "text": "Увеличение объемов производства продукции"
+    },
+    {
+      "image": "./images/advantages/adv-4.png",
+      "hover": "./images/advantages/adv-4-hover.png",
+      "text": "Внедрение инноваций и передовых технологий в производственные процессы"
+    }
+  ],
+  "ServicesArray": [
+    {
+      "image": "./images/services/1.png",
+      "hover": "./images/services/1-hover.png",
+      "title": "Проведение экспресс-оценки индекса технологической готовности СМСП."
+    },
+    {
+      "image": "./images/services/2.png",
+      "hover": "./images/services/2-hover.png",
+      "title": "Анализ потенциала предприятий, выявление текущих потребностей и проблем предприятий, влияющих на их конкурентоспособность."
+    },
+    {
+      "image": "./images/services/3.png",
+      "hover": "./images/services/3-hover.png",
+      "title": "Проведение технических аудитов (технологического / энергетического / экологического / аудита производства в целях предсертификационной, предлицензионной подготовки)."
+    },
+    {
+      "image": "./images/services/4.png",
+      "hover": "./images/services/4-hover.png",
+      "title": "Содействие в разработке программ модернизации / развития / технического перевооружения производства для предприятий МСП."
+    },
+    {
+      "image": "./images/services/5.png",
+      "hover": "./images/services/5-hover.png",
+      "title": "Консультационные услуги по защите прав на результаты интеллектуальной деятельности (патентные услуги)."
+    },
+    {
+      "image": "./images/services/6.png",
+      "hover": "./images/services/6-hover.png",
+      "title": "Инженерно-исследовательские, проектно-конструкторские и расчетно-аналитические работы."
+    },
+    {
+      "image": "./images/services/7.png",
+      "hover": "./images/services/7-hover.png",
+      "title": "Содействие в получении маркетинговых услуг, услуг по позиционированию и продвижению новых видов продукции (товаров, услуг) на российском и международном рынках."
+    },
+    {
+      "image": "./images/services/8.png",
+      "hover": "./images/services/8-hover.png",
+      "title": "Подготовка, переподготовка и повышение квалификации кадров."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+mixin advantages(advantages)
+  .header-advantages
+    if(advantages)
+      each item in advantages
+        .advantages-item
+          .advantages-item__image
+            img.advantages-item_original(src=item.image)
+            img.advantages-item_hover(src=item.hover)
+          .advantages-item__text= item.text

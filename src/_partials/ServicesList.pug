@@ -1,0 +1,9 @@
+mixin ServicesList(services)
+  .services__list
+    each item in services
+      a.services-item(href="#")
+        .services-item__image
+          img.services-item__original(src=item.image)
+          img.services-item__hover(src=item.hover)
+        .services-item__title(lang="ru")= item.title
+        .services-item__link подробнее

@@ -1,0 +1,36 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+*{
+  position:relative;
+}
+
+$ms300: 'MuseoSans300', sans-serif;
+$ms500: 'MuseoSans500', sans-serif;
+$ms700: 'MuseoSans700', sans-serif;
+$ms900: 'MuseoSans900', sans-serif;
+
+body {
+  font-family: $ms300;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #ffffff;
+}
+
+.center{
+  width: 1000px;
+  margin: 0 auto;
+}

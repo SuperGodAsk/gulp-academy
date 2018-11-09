@@ -1,0 +1,229 @@
+.header {
+  background-image: url('../images/header-bg.png');
+  background-size: cover;
+  flex-shrink: 0;
+  padding-bottom: 109px;
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(63, 83, 102, 0.45);
+  }
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  width: 100%;
+}
+
+.header__logo {
+  display: flex;
+}
+
+.header-phones {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: $ms900;
+  margin-top: 30px;
+  &__item {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 0.6px;
+    transition: all .4s;
+    &::before {
+      content: "";
+      background-image: url("../images/phone-icon.png");
+      background-size: cover;
+      width: 17px;
+      height: 18px;
+      position: absolute;
+      left: -25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:hover {
+      color: #ee700e;
+    }
+  }
+}
+
+@mixin header-menu-pseudo {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 55px;
+  background: white;
+}
+
+.header-menu {
+  background-color: #ffffff;
+  margin-top: 20px;
+  &::before {
+    @include header-menu-pseudo;
+    left: -55px;
+  }
+  &::after {
+    @include header-menu-pseudo;
+    right: -55px;
+  }
+  &__list {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #ee700e;
+      transition: all .4s;
+      opacity: 0;
+      z-index: 1;
+    }
+    &:hover::before {
+      height: calc(100% + 14px);
+      opacity: 1;
+    }
+  }
+  &__link {
+    padding: 39px 0 39px;
+    font-family: $ms700;
+    font-size: 15px;
+    color: #000000;
+    text-decoration: none;
+    transition: color .1s;
+    z-index: 2;
+    text-align: center;
+    height: 100%;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+.header__title {
+  margin-top: 70px;
+  font-size: 42px;
+  text-transform: uppercase;
+  font-family: $ms900;
+  color: #ffffff;
+  text-align: center;
+  line-height: 46px;
+}
+
+.header__subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 36px;
+  font-family: $ms900;
+  color: #ffffff;
+  line-height: 46px;
+}
+
+.header-advantages {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  &__image {
+    $parentImage: &;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 93px;
+    height: 93px;
+    border: 1px solid #ffffff;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    transition: .4s;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all .4s;
+    }
+
+  }
+  &_original {
+    opacity: 1;
+  }
+  &_hover {
+    opacity: 0;
+  }
+  &:hover &__image {
+    background: rgba(255, 255, 255, 1);
+  }
+  &:hover &_original {
+    opacity: 0;
+  }
+  &:hover &_hover {
+    opacity: 1;
+  }
+  &__text {
+    margin-top: 38px;
+    text-align: center;
+    font-family: $ms700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+}
+
+.header-buttons {
+  margin-top: 76px;
+  display: flex;
+  justify-content: center;
+  &__button {
+    padding: 22px 28px;
+    background-color: #ffffff;
+    font-family: $ms500;
+    font-size: 14px;
+    color: #727272;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all .4s;
+    margin: 0 14px;
+    &:hover {
+      background-color: #ee700e;
+      color: #eaece7;
+    }
+  }
+}
+

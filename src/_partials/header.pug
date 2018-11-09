@@ -1,0 +1,19 @@
+include TopMenu
+include advantages
+
+header.header
+  .center
+    .header-top
+      a.header-logo(href="#")
+        img.header-logo__image(src="./images/logo.png" alt="Логотип")
+      .header-phones
+        a.header-phones__item(href="tel:+74872259832") + 7 4872 25 98 32
+    +TopMenu(TopMenuArray)
+    .header__title Центр инжиниринга
+    .header__subtitle
+      span Тульского регионального фонда
+      span Центр поддержки предпринимательства
+    +advantages(AdvantagesArray)
+    .header-buttons
+      a.header-buttons__button(href="#") Конкурсная документация
+      a.header-buttons__button(href="#") Коммерческие предложения
