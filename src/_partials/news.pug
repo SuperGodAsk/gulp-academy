@@ -1,0 +1,15 @@
+mixin News(NewsArray)
+  section.news
+    .center
+      .news__title Новости
+      .news__list
+        each item in NewsArray
+          .news-item
+            .news-item__date
+              .news-item__day= item.day
+              .news-item__month= item.month
+              .news-item__year= item.year
+            a.news-item__title(href=item.href)= item.title
+            .news-item__text= item.text
+            a.news-item__link(href=item.href) читать
+      a.news__all(href="#") Смотреть все новости

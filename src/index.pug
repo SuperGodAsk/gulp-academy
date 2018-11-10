@@ -1,5 +1,8 @@
 extends _layouts/home
+include _partials/news
 
 block content
   include _partials/header
   include _partials/services
+  +News(NewsArray)
+  include _partials/footer
