@@ -1,8 +1,8 @@
-extends _layouts/home
-include _partials/news
+extends templates/home
+include _components/news
 
 block content
-  include _partials/header
-  include _partials/services
+  include _layouts/header
+  include _layouts/services
   +News(NewsArray)
-  include _partials/footer
+  include _layouts/footer
